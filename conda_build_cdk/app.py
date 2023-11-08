@@ -8,7 +8,7 @@ PROJECT_REPO = "pypdf"
 RESOURCE_NAMES = {
     'repo_name': PROJECT_REPO,
     'repo_owner': "building-estimates",
-    'repo_branch': "master",
+    'repo_branch': "main",
     'project_name': ''.join(part.title() for part in re.split(', |_|-|!',  PROJECT_REPO)),
     'dockerfile_name': "Dockerfile.codebuild",
     'conda_channel_bucket': "building-estimates-conda-channel",
