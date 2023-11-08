@@ -2,5 +2,5 @@ FROM public.ecr.aws/k5q1y0q6/miniconda3:22.11.1
 
 RUN apt-get update && apt-get install -y fuse
 RUN wget -P /usr/bin https://github.com/kahing/goofys/releases/download/v0.24.0/goofys && chmod +x /usr/bin/goofys
-RUN conda install conda-build conda-libmamba-solver
+RUN conda install python=3.8 conda-build conda-libmamba-solver
 RUN conda config --set solver libmamba
